@@ -35,7 +35,7 @@ $result = $depose->addDeposit($userId, $title, $amount, $source);
 if ($result) {
     $_SESSION['success'] = 'Dépôt ajouté avec succès!';
 } else {
-    $_SESSION['error'] = 'Erreur lors de l\'ajout du dépôt';
+    $_SESSION['error'] = "Erreur lors de l'ajout du dépôt";
 }
 
 header('Location: /wallet/Views/dashboard.php');
